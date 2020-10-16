@@ -1,0 +1,107 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    /*border: thin dotted;*/
+}
+::selection{
+    background:rgb(199, 199, 199);
+}
+#nevspacebox{
+    width:100%;
+    height:70px;
+}
+#wallpaper{
+    position: absolute;
+    width:100%;
+    background-image: url("../image/texture.jpg");
+    background-image: repeat-x;
+    background-size: 150px 150px;
+    opacity:0.1;
+    filter:alpha(opacity=10);
+    z-index:-1;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: rgb(90, 90, 90);
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    z-index:1;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 5px rgb(60, 60, 60);
+}
+header .logo {
+    width:250px;
+    position: relative;
+    left:50px;
+    top:3px;
+    animation: logomove 3s 1;
+    -webkit-animation:logomove 3s 1;
+    -moz-animation: logomove 3s 1;
+}
+#menubox{
+    width:350px;
+    position: absolute;
+    right:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#menubox a{
+    float: left;
+    color:whitesmoke;
+    padding:27px 15px 24px 15px;
+}
+#menubox a:hover{
+    transition: all .5s;
+    background-color: whitesmoke;
+    color:black;
+}
+footer{
+    height:230px;
+    margin:80px 0 0 0;
+    background-color: rgb(90, 90, 90);
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+footer p{
+    padding:50px 0 30px 0;
+}
+#footer-link-box{
+    width:100%;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a.footer{
+    color:whitesmoke;
+    padding:10px 15px 10px 15px;
+}
+a:hover.footer{
+    background-color: whitesmoke;
+    color:black;
+    transition:all .5s;
+}
+footer .logo{
+    width:250px;
+}
+@keyframes logomove{
+    0% {left:50px;}
+    50% {left:200px;}
+    100% {left:50px;}
+}
